@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+  <title>Tomohiro Caller</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- #css読込 -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sample1.css') }}">
+  </head>
+  <body>
+  <div class="box2">
+  <h1>Tomohiro Caller</h1>
+    <p>　{{ message }}</p>
+  <form action="/" method="POST" enctype="multipart/form-data">
+    <div class="selectdiv">
+    <select name="sel">
+    <option value="null" disabled selected>message...</option>
+    <option value="1">1.リビングに来てください</option>
+    <option value="2">2.はやくして</option>
+    <option value="3">3.英語の時間です</option>
+    <option value="4">4.チャレンジの時間です</option>
+    <option value="5">5.RISUの時間です</option>
+    <option value="6">6.ドアを閉めてください</option>
+    </select>
+    </div>
+    <input class="shadow-4" type="submit" value="CALL">
+  </form>
+  <br>
+  </div>
+  </body>
+</html>
